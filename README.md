@@ -1,9 +1,9 @@
-Introduction:
+**Introduction:**
 
 The Car Animation project showcases the use of the graphics.h library in C++ to simulate a dynamic and visually engaging environment where a car moves along a road. This project focuses on illustrating fundamental computer graphics techniques, such as drawing geometric shapes, applying color, and animating objects within a 2D space.
 The proposed animation includes a road with lane markings, multi-story buildings, grass with flowers, and a car moving continuously in a loop. The project serves as a practical demonstration of animation and rendering concepts, making it an excellent introduction to computer graphics programming.
 
-Objectives:
+**Objectives:**
 
 •	To create a visually appealing car animation in C++ using the graphics.h library.
 •	To simulate a dynamic environment featuring:
@@ -12,7 +12,8 @@ Objectives:
 •	Grass, flowers, and multi-story buildings.
 •	To implement smooth animations using double buffering techniques.
 
-Features:
+**Features:**
+
 •	Dynamic Animation: A car moves continuously across the screen, resetting to the starting position upon exiting.
 •	Environmental Elements:
 •	A road with lane markings created using simple line patterns.
@@ -20,13 +21,13 @@ Features:
 •	Multi-story buildings along the road for added realism.
 •	Smooth Animation: The use of double buffering ensures seamless transitions and reduces flickering.
 
-Technologies Tools:
+**Technologies Tools:**
 
 ●	Programming Language: C++
 ●	Graphics Library: graphics.h 
 ●	Development Environment: C++ IDE, Code::Blocks, Dev C++
 
-Project Plan:
+**Project Plan:**
 
 Phase 1: Environment Design 
 
@@ -42,7 +43,7 @@ Phase 2: Car Design
 •	Use geometric shapes (polygons, circles, ellipses) to design the car body, wheels, and lights.
 •	Ensure color consistency and a visually appealing design.
 
-Phase 3: Animation
+**Phase 3: Animation**
 
 •	Objective: Animate the car's movement across the screen.
 •	Tasks:
@@ -50,7 +51,7 @@ Phase 3: Animation
 •	Use double buffering to ensure smooth animation without flickering.
 •	Reset the car’s position when it moves off-screen.
 
-Phase 4: Testing and Optimization
+**Phase 4: Testing and Optimization**
 
 •	Objective: Ensure smooth operation and visually appealing graphics.
 •	Tasks:
