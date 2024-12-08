@@ -114,16 +114,29 @@ void drawGrass(int grassY) {
 
 // Function to draw a tree
 void drawTree(int x, int y) {
-    // Tree Trunk
+          // Tree Trunk (reduced by 30%)
+    setcolor(BROWN);
     setfillstyle(SOLID_FILL, BROWN);
-    bar(x - 15, y, x + 15, y + 90);  // Trunk
+    bar(x - 10, y-10, x + 10, y + 90); // Reduced trunk (width and height scaled by 0.7)
+
+    // Adjust the starting position for the leaves
+     // Updated trunk height
+
+    // Tree Leaves (Crown, reduced by 30%)
     setcolor(GREEN);
-    // Tree Leaves (Crown)
     setfillstyle(SOLID_FILL, GREEN);
-    fillellipse(x, y - 30, 60, 50);   // Main leaves
-    fillellipse(x - 40, y - 50, 40, 40); // Left leaves
-    fillellipse(x + 40, y - 50, 40, 40); // Right leaves
-    fillellipse(x , y -80, 40, 40); // Right leaves
+
+
+      pieslice(x, y - 43, 0, 180, 25);    // Center half-circle (big)
+    pieslice(x - 28, y - 27, 0, 360, 21);  // Left half-circle (medium)
+    pieslice(x + 28, y - 27, 0, 360, 21);  // Right half-circle (medium)
+    pieslice(x, y - 22, 0, 180, 28);       // Center half-circle (medium)
+    pieslice(x - 35, y - 8, 0, 360, 21);   // Left half-circle (medium)
+    pieslice(x + 35, y - 8, 0, 360, 21);   // Right half-circle (medium)
+    pieslice(x, y + 2, 0, 180, 28);        // Center half-circle (medium)
+    pieslice(x - 28, y + 2, 180, 360, 21); // Left half-circle (small, upside-down)
+    pieslice(x + 28, y + 2, 180, 360, 21); // Right half-circle (small, upside-down)
+    pieslice(x, y + 2, 180, 360, 21);      // Center half-circle (small, upside-down)
 
 }
 
@@ -194,10 +207,10 @@ void moveCar(int speed) {
         // Draw flowers in the grass area
 
         for (int i = 0; i < 6; i=i+2) {
-            drawBuilding(100 + i * 240, roadY-25); // Draw buildings
+            drawBuilding(100 + i * 240, roadY-17); // Draw buildings
         }
         for (int i = 0; i < 6; i+=2) {
-            drawTree(410 + i * 240, roadY - 113); // Draw tree
+            drawTree(410 + i * 240, roadY - 107); // Draw tree
         }
 
 
